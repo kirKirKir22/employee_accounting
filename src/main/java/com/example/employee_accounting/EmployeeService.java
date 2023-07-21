@@ -1,16 +1,16 @@
 package com.example.employee_accounting;
 
-import org.springframework.http.ResponseEntity;
-
-import java.util.List;
+import java.util.Collection;
 
 public interface EmployeeService {
 
-    void addEmployee(String firstName, String lastName);
+    Employee addEmployee(String firstName, String lastName);
 
-    void removeEmployee(String firstName, String lastName);
+    Employee removeEmployee(String firstName, String lastName);
 
-    String findEmployee(String firstName, String lastName);
+    Employee findEmployee(String firstName, String lastName);
+
+    Collection<Employee> printAll();
 
 
 }

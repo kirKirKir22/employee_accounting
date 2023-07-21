@@ -2,7 +2,7 @@ package com.example.employee_accounting.exception;
 
 public class EmployeeStorageIsFullException extends RuntimeException {
 
-    public EmployeeStorageIsFullException(String message) {
+    public EmployeeStorageIsFullException(String  message) {
         super(message);
     }
 }

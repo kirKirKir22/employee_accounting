@@ -31,12 +31,12 @@ public class Employee {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
-        return Objects.equals(firstName, employee.firstName) && Objects.equals(firstName, employee.lastName);
+        return Objects.equals(getFirstName(), employee.getFirstName()) && Objects.equals(getFirstName(), employee.getLastName());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(firstName, lastName);
+        return Objects.hash(getFirstName(), getLastName());
     }
 
 }
